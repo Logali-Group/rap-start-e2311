@@ -18,8 +18,8 @@ class zcl_data_generator_log implementation.
 
     out->write( |----> Travel| ).
 
-    delete from ztravel_log_a.                          "#EC CI_NOWHERE
-    delete from ztravel_log_d.                          "#EC CI_NOWHERE
+    delete from ztravel_log_a.             "#EC CI_NOWHERE
+    delete from ztravel_log_d.             "#EC CI_NOWHERE
 
     insert ztravel_log_a from (
       select from /dmo/travel fields
@@ -53,8 +53,8 @@ class zcl_data_generator_log implementation.
     " bookings
     out->write( |----> Bookings| ).
 
-    delete from zbooking_log_a.                         "#EC CI_NOWHERE
-    delete from zbooking_log_d.                         "#EC CI_NOWHERE
+    delete from zbooking_log_a.            "#EC CI_NOWHERE
+    delete from zbooking_log_d.            "#EC CI_NOWHERE
 
     insert zbooking_log_a from (
         select
